@@ -1,0 +1,85 @@
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .error{
+        font-size: 20px;
+        border: 1px solid;
+        margin: 10px auto;
+        padding: 15px 10px;
+        background-repeat: no-repeat;
+        background-position: 10px center;
+        width: 460px;
+        color: #D8000C;
+        background-color: #FFBABA;
+        background-image: url('https://i.imgur.com/GnyDvKN.png');
+        p {
+            margin: 0;
+        }
+    }
+    .form {
+        width: 500px;
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 1rem;
+        }
+        input {
+            width: 100%;
+            height: 2.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 0 0.5rem;
+            margin-bottom: 1rem;
+        }
+        button {
+            width: 100%;
+            height: 2.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #000;
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #fff;
+            color: #000;
+        }
+    }
+    .table {
+        width: 500px;
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 1rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #ccc;
+            thead {
+                tr {
+                    th {
+                        border: 1px solid #ccc;
+                        padding: 0.5rem;
+                        text-align: left;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        border: 1px solid #ccc;
+                        padding: 0.5rem;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }    
+}
