@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const userService = require('./service');
 
+router.get("/send", (req, res) => res.redirect("/"));
 router.post('/api/user', userService.addUser)
 router.get('/api/user', userService.getUsers)
 router.delete('/api/user', userService.deleteUser)

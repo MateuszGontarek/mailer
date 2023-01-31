@@ -13,7 +13,7 @@ const sendMessage = async (req, res) => {
 };
 
 const getMessage = async (req,res) => {
-    const message = await Message.find({$or: [{ sender: req.body.email }, { reciver: req.body.email }]});
+    const message = await Message.find({$or: [{ sender: req.body.email }, { receiver: req.body.email }]});
     
     try {
         res.status(200).json(message);
