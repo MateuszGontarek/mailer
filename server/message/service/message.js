@@ -45,9 +45,20 @@ const readMessage = async (req, res) => {
     }
 };
 
+const getEmailsAmount = async (req, res) => {
+    try {
+        const messages = await Message.find();
+        res.status(200).json({ lenght: messages.length });
+    } catch (error) {
+        console.log(error);
+        res.status(400).json({ error });
+    }
+}
+
 module.exports = {
     sendMessage,
     getMessage,
     deleteMessage,
-    readMessage
+    readMessage,
+    getEmailsAmount 
 };

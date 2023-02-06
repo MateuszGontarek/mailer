@@ -13,7 +13,7 @@ app.use(cookieParser());
 app.use(loginApi);
 app.use(userApi);
 app.use(messageApi);
-const db = 'XXXX';
+const db = 'mongodb+srv://admin:admintechni123@cluster0.zfvtf.mongodb.net/mailer?retryWrites=true&w=majority';
 
 mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.set('useCreateIndex', true)

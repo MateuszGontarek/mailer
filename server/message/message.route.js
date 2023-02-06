@@ -8,4 +8,5 @@ router.post("/api/messages", userService.sendMessage);
 router.post("/api/get-messages", userService.getMessage);
 router.delete("/api/delete-message/:id", userService.deleteMessage);
 router.put("/api/read-message/:id", userService.readMessage);
+router.post('/api/email-amount', userService.getEmailsAmount)
 module.exports = router;
